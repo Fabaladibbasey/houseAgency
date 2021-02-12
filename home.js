@@ -2,20 +2,10 @@
 const bar = document.querySelector(".bar")
 const mobileNav = document.querySelector(".mobileNav")
 
-bar.addEventListener("click", toggle)
 
-
-function toggle(){
-
-if(mobileNav.style.display !== "none"){
-  mobileNav.style.display = "none"
-}else{
-  mobileNav.style.display = "block"
-  mobileNav.style = "default"
-}
-
-}
-
+bar.addEventListener('click', ()=>{
+  mobileNav.classList.toggle("enable_mobileNav")
+})
 
 
 var slideIndex = 1;
