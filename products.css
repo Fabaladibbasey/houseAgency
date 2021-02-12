@@ -1,0 +1,214 @@
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navContainer {
+  width: 100vw;
+  height: 50px;
+  background-color: green;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+  letter-spacing: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.navContainer div {
+  color: rgb(8, 3, 3);
+}
+#navLink {
+  color: rgb(16, 16, 189);
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* product items in home.html */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  padding: 16px;
+  margin-top: -80px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* .row {
+  border: 2rem black solid;
+} */
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+/* Six columns side by side */
+.column {
+  width: 12.66vw;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* end of product slide in home.html*/
+
+.productsContainer {
+  width: 85vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 3rem;
+  column-gap: 1.3rem;
+  margin: 0 auto;
+}
+
+.singleProduct {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 2rem #d1cfcf;
+  background: #edddb2;
+  transition: all ease-out 1s;
+  position: relative;
+}
+
+.singleProduct:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+.singleProduct:hover .fontIcon {
+  visibility: visible;
+}
+.info {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 0.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.fontIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  display: flex;
+  transition: all ease-out 0.5s;
+}
+
+.icon {
+  background-color: coral;
+  cursor: pointer;
+  border-radius: 50%;
+  color: cornsilk;
+  padding: 0.6rem;
+  transition: all ease 0.5s;
+}
+
+#explore {
+  margin-right: 1rem;
+}
+
+#order {
+  margin-left: 1rem;
+}
+.icon :hover {
+  transform: scale(1.2);
+}
+
+/* overlay */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(10, 10, 48, 0.9);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* footer */
+.footerItems {
+  margin-top: 4rem;
+  width: 100vw;
+  height: 10rem;
+  background-color: #ae7d5cce;
+  color: white;
+}
